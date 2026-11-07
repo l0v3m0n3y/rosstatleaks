@@ -78,7 +78,7 @@ public class rosstatLeaks {
 
     public func getStatsByRegion(region: String, lang: String = "en") async throws -> Any {
         try await fetchJSON(
-            from: "\(api)/stats,
+            from: "\(api)/stats",
             queryParameters: ["region": region, "lang": lang]
         )
     }
